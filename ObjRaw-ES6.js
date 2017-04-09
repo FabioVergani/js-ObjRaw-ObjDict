@@ -1,4 +1,4 @@
-const call=(function(e){const o=e.prototype;return o.call.bind(o.bind);})(Function);
+const call=callable=(function(e){const o=e.prototype;return o.bind.bind(o.call)})(Function)
 //
 const RawObject=call(Object.create,null,null);
 //
